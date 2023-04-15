@@ -1,4 +1,6 @@
+
 import openai
+import pdfminer
 from pdfminer.high_level import extract_text
 from pdfminer.layout import LAParams
 import nltk
@@ -12,7 +14,7 @@ import argparse
 load_dotenv()
 
 # Replace with your own OpenAI API key or set the OPENAI_API_KEY environment variable
-openai.api_key =  os.getenv('OPENAI_API_KEY')
+openai.api_key =  os.getenv('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')
 
 def count_tokens(text):
     """Counts the number of tokens in a string.
